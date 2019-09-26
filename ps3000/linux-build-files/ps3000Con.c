@@ -966,8 +966,8 @@ void collect_streaming (void)
 
 	printf ( "Collect streaming...\n" );
 	printf ( "Data is written to disk file (test.out)\n" );
-	printf ( "Press a key to start\n" );
-	_getch ();
+	//printf ( "Press a key to start\n" );
+	//_getch ();
 
 	set_defaults ();
 
@@ -1011,11 +1011,11 @@ void collect_streaming (void)
 											BUFFER_SIZE );
 		printf ( "%d values\n", no_of_values );
 
-		if ( block_no++ > 20 )
-		{
-			block_no = 0;
-			printf ( "Press any key to stop\n" );
-		}
+		// if ( block_no++ > 20 )
+		// {
+		// 	block_no = 0;
+		// 	printf ( "Press any key to stop\n" );
+		// }
 
 		/* Print out the readings
 			*/
@@ -1039,7 +1039,7 @@ void collect_streaming (void)
 
 	ps3000_stop ( unitOpened.handle );
 
-	_getch ();
+	//_getch ();
 }
 
 void collect_fast_streaming (void)
@@ -1661,6 +1661,7 @@ void main (int argc, char** argv)
 	printf ( "\n\nOpening the device...\n");
 
 	//open unit and show splash screen
+	ps3000_close_unit ( unitOpened.handle );
 	unitOpened.handle = ps3000_open_unit ();
 	printf ( "Handle: %d\n", unitOpened.handle );
 	
