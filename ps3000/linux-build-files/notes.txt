@@ -1,0 +1,10 @@
+STREAM results
+==============
+
+To start obtaining results execute as follows:
+
+	$ bash manageStream.sh start
+
+and to stop the above command (do not force kill or quit) use:
+
+	$ bash manageStream.sh stop
