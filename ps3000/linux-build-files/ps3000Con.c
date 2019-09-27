@@ -1014,7 +1014,7 @@ void collect_streaming (void)
 		if ( block_no++ > 5 )
 		{
 			block_no = 0;
-			printf ( "Press any key to stop\n" );
+			//printf ( "Press any key to stop\n" );
 		}
 
 		/* Print out the readings
