@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ $1 == "start"  ]; then
-	
+	rm ./test.out
 	echo -ne "\n" | ./ps3000Con S
 fi
 

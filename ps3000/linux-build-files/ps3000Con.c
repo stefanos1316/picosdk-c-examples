@@ -1011,7 +1011,7 @@ void collect_streaming (void)
 											BUFFER_SIZE );
 		printf ( "%d values\n", no_of_values );
 
-		if ( block_no++ > 20 )
+		if ( block_no++ > 5 )
 		{
 			block_no = 0;
 			printf ( "Press any key to stop\n" );
